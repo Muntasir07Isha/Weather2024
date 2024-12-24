@@ -285,7 +285,7 @@ const LandingPage = () => {
             {weather && weather.coord ? (
               <WeatherMap
                 coordinates={weather.coord}
-                apiKey="48d32813255b0282cba55e9ea51e99bb"
+                apiKey={import.meta.env.VITE_WEATHER_API_KEY}
               />
             ) : (
               <Text color="whiteAlpha.700">Loading map...</Text>
